@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Em Breve...</title>
+    <title>Imagem em Tela Cheia</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
         }
-        h1 {
-            font-size: 48px;
-            color: #333;
+        .full-screen-image {
+            background-image: url('casa_floratta.pngg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>Em breve...</h1>
+    <div class="full-screen-image"></div>
 </body>
 </html>
